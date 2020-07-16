@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>We're Not In Browser - the JavaScript Bootcamp</title>
+
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <h1>We're Not In Browser</h1>
+
+    <p>
+      Because <code>windows</code> and <code>document</code> are browser's objects. We're currently in terminal and due to this we don't have access to those objects. Instead we have other objects that do many useful things on terminal and system side such as <code>process</code>, <code>os</code>, <code>fs</code>, and many others.
+    </p>
+
+    <p>Let's try <code>process.pid</code>. Process is an object in Node and <code>pid</code> is content of this object. This will return a process id of process in execution. We can print this using <code>console.log</code>. Create a new file with name <code>pid.js</code> and type following code:</p>
+
+    <pre>console.log(<mark>process.pid</mark>)</pre>
+
+    <p>
+      You know how to run this program, right?
+    </p>
+
+    <pre>$ node pid.js
+2585</pre>
+
+    <p>
+      That's okay, if you get different process id, it is based on system you are running.
+    </p>
+
+    <a href="65.html">Next &#8594;</a>
+  </body>
+</html>

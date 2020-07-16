@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>os.type() - the JavaScript Bootcamp</title>
+
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <h1>os.type()</h1>
+
+    <p>
+      While we're here, why not try out other object(s)? How about <code>os.type()</code>? If you look over the docs for <a href="https://nodejs.org/dist/latest-v14.x/docs/api/os.html#os_os"><code>os</code></a>, you'll find a method with name <a href="https://nodejs.org/dist/latest-v14.x/docs/api/os.html#os_os_type"><code>type()</code></a> and it return a simple string based on your operating system. As it returns, we need to a <code>console.log</code>. Let's create a <code>type.js</code> program and type following code:
+    </p>
+
+    <pre>console.log(os.type())</pre>
+
+    <p>
+      Let's run this program:
+    </p>
+
+    <pre>$ node type.js
+/home/kiran/Code/Node/type.js:1
+console.log(os.type())
+            ^
+
+ReferenceError: <mark>os is not defined</mark>
+    at Object.&lt;anonymous&gt; (/home/kiran/Code/Node/type.js:1:13)
+    at Module._compile (internal/modules/cjs/loader.js:1200:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1220:10)
+    at Module.load (internal/modules/cjs/loader.js:1049:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:937:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)
+    at internal/main/run_main_module.js:17:47</pre>
+
+    <p>
+      Oops! We got the error and it says that <code>os is not defined</code>. Why in world, it is not working? I mean we called <code>log()</code> method from <code>console</code> object and it work. We called <code>pid</code> constant from <code>process</code> object and it also work. But, now Node is complaining about <code>os</code>, even though it is written there in documentation.
+    </p>
+
+    <a href="67.html">Next &#8594;</a>
+  </body>
+</html>

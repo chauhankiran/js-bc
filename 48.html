@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Array Destructuring - the JavaScript Bootcamp</title>
+
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <h1>Array Destructuring</h1>
+
+    <p>
+      Instead of creating separate variable and assigning value to each just write -
+    </p>
+
+    <pre>let [maths, physics, chemistry] = marks</pre>
+
+    <p>
+      JavaScript automatically assign first element of marks to <code>maths</code>, second element of marks to <code>physics</code>, and third element of marks to <code>chemistry</code>.
+    </p>
+
+    <p>
+      What if I don't want <code>physics</code> marks. Just leave the space off -
+    </p>
+
+    <pre>let [maths, , chemistry] = marks</pre>
+
+    <p>
+      What if I only want chemistry marks. Just leave that you don't want -
+    </p>
+
+    <pre>let [, , chemistry] = marks</pre>
+
+    <p>
+      Regarding above syntax, don't do this - this is not readable. You need to count comma, and the element to know what chemistry will get from array. In this case, I would suggest you to go with old way.
+    </p>
+
+    <a href="49.html">Next &#8594;</a>
+  </body>
+</html>

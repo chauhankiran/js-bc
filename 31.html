@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>.forEach - the JavaScript Bootcamp</title>
+
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <h1>.forEach</h1>
+
+    <p>
+      This function works on array e.g. you need to call on array variable such as:
+    </p>
+
+    <pre>a = [34, 45, 47, 40, 33]
+
+a<mark>.forEach()</mark></pre>
+
+    <p>
+      This <code>forEach()</code> function accept function as parameter such as:
+    </p>
+
+    <pre>a = [34, 45, 47, 40, 33]
+
+a.forEach(<mark>function() {</mark>
+
+<mark>})</mark></pre>
+
+    <p>
+      This <code>.forEach()</code> function gives you each element from an array <code>a</code> (again element not index) which needs to pass as parameter of function we just defined:
+    </p>
+
+    <pre>a = [34, 45, 47, 40, 33]
+
+a.forEach(function(<mark>i</mark>) {
+
+})</pre>
+
+    <p>
+      Now, you can do whatever you want with this <code>i</code> such as,
+    </p>
+
+    <pre>a = [34, 45, 47, 40, 33]
+
+a.forEach(function(i) {
+  <mark>console.log(i)</mark>
+})</pre>
+
+    <p>
+      See, much cleaner syntax!
+    </p>
+
+    <a href="32.html">Next &#8594;</a>
+  </body>
+</html>

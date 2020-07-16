@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Array Destructuring with Spread Syntax - the JavaScript Bootcamp</title>
+
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <h1>Array Destructuring with Spread Syntax</h1>
+
+    <p>
+      Consider the following example:
+    </p>
+
+    <pre>let marks = [34, 35, 37, 45, 40, 56]</pre>
+
+    <p>
+      These are the marks of seven subject. I'm interested in first, second and then remaining. In other words, I want to store 34 in one variable, 35 in second variable and remaining element in third variable as array.
+    </p>
+
+    <p>
+      With destructuring and spread operator, it is trivial:
+    </p>
+
+    <pre>let [math, physics, ...other_marks] = marks</pre>
+
+    <p>
+      With this, math variable hold 34, physics variable hold 35, and other_marks - an array variable hold remaining marks - [37, 45, 40, 56]
+    </p>
+
+    <p>
+      Destructuring and spread operators used a lot in React.
+    </p>
+
+    <a href="51.html">Next &#8594;</a>
+  </body>
+</html>

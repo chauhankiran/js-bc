@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Zilla+Slab+Highlight:wght@700&family=Zilla+Slab:ital@0;1&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: 'Zilla Slab', serif;
+  line-height: 1.3;
+  font-size: 18px;
+  width: 100%;
+  max-width: 39rem;
+  margin: 5rem auto;
+}
+h1 {
+  font-family: 'Zilla Slab Highlight', cursive;
+}
+blockquote {
+  font-style: italic;
+}
+a {
+  /*display: block;*/
+  background-color: rgba(41,98,255,.13);
+  color: #2962ff !important;
+  /*text-align: right;*/
+  outline: 0;
+  text-decoration: none;
+}
+.btn {
+  border: 1px solid #333;
+  padding: .5rem 1rem;
+  border-radius: 1rem;
+  width: 10rem;
+  text-align: center;
+  background-color: #efefef;
+  color: #333;
+}
+/* If you are reading this, here is one thing for you.
+   Download the Source Code Pro fonts and set it with
+   your browser's monospace fonts. Code looks little
+   good. As I did not include fonts CDN.
+*/
+code, pre {
+  font-size: 14px;
+  font-family: 'IBM Plex Mono', monospace;
+}
+pre {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+s {
+  color: red;
+}
+footer {
+  margin-top: 6rem;
+  color: #afafaf;
+  font-size: 15px;
+}
+footer a {
+  color: #afafaf !important;
+  background-color: #efefef;
+}
+.name {
+  background-color: rgba(9,165,86,.13);
+}

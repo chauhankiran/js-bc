@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Useful Constants - the JavaScript Bootcamp</title>
+
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <h1>Useful Constants</h1>
+
+    <p>
+      We'll solve the error in <code>type.js</code> within few minutes. But, while we're here, I want to point out two important constants that'll use a lot on back-end side. These constants are - <a href="https://nodejs.org/dist/latest-v14.x/docs/api/globals.html#globals_dirname"><code>__dirname</code></a> and <a href="https://nodejs.org/dist/latest-v14.x/docs/api/globals.html#globals_filename"><code>__filename</code></a>.
+    </p>
+
+    <p>
+      <code>__dirname</code> return the current directory name and <code>__filename</code> return current file name in execution. Let's create new program with name <code>const.js</code> and print the output from both constants as follows:
+    </p>
+
+    <pre>console.log(<mark>__direname</mark>)
+console.log(<mark>__filename</mark>)</pre>
+
+    <p>
+      Running this program will print the following output:
+    </p>
+
+    <pre>$ node const.js
+/home/kiran/Code/Node
+/home/kiran/Code/Node/const.js</pre>
+
+    <p>
+      The first one print the directory or folder name and second one print the name of file.
+    </p>
+
+    <a href="69.html">Next &#8594;</a>
+  </body>
+</html>

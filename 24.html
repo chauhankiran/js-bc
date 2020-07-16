@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Function is First-Class Citizen - the JavaScript Bootcamp</title>
+
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <h1>Function is First-Class Citizen</h1>
+
+    <p>
+      Function is a first-class citizen in JavaScript e.g. you can treat function as variable. You can even assign the complete function as value to variable such as:
+    </p>
+
+    <pre><mark>let add =</mark> function(a, b) {
+  return a + b;
+}</pre>
+
+    <p>
+      If you're assigning the function to a variable, you can eliminate the <code>function</code> keyword by using arrow or <code>=></code> after parameters and before opening curly brace such as:
+    </p>
+
+    <pre>let add = (a, b) <mark>=></mark> {
+  return a + b;
+}</pre>
+
+    <a href="25.html">Next &#8594;</a>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Extension Doesn't Matter - the JavaScript Bootcamp</title>
+
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <h1>Extension Doesn't Matter</h1>
+
+    <p>
+      The interesting thing about Node is that it assume that if you are running some file against <code>node</code>, file should have valid JavaScript code. Due to this extension doesn't matter. Change the extension from <code>.js</code> to <code>.something</code> and then run.
+    </p>
+
+    <pre>$ node hello.something
+hello, world</pre>
+
+    <p>
+      The disadvantage of this is, you'll not get syntax highlighting and some default support from modern text-editor if <code>.js</code> extension is not found.
+    </p>
+
+    <p>
+      On the other hand as it assume that the file should be a valid JavaScript, if you have <code>.js</code> extension you can leave off the extension.
+    </p>
+
+    <p>
+      Let's change the extension back to <code>.js</code> from <code>.something</code> and then run without extension:
+    </p>
+
+    <pre>$ node hello
+hello, world</pre>
+
+    <p>
+      Things are not ends here! Let's create a new folder <code>greeting</code>. Rename the <code>hello.js</code> file to <code>index.js</code> and then move this file into <code>greeting</code> folder. Now, if you run the following command it will execute <code>greeting/index.js</code> file:
+    </p>
+
+    <pre>$ node greeting
+hello, world</pre>
+
+    <p>
+      When node found that greeting is a folder and no file name is mentioned, it'll automatically run <code>index.js</code>.
+    </p>
+
+    <a href="62.html">Next &#8594;</a>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>How to Define Object? - the JavaScript Bootcamp</title>
+
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <h1>How to Define Object?</h1>
+
+    <p>
+      Using curly braces with key: value pair such as:
+    </p>
+
+    <pre>let name = <mark>{</mark> first_name<mark>:</mark> "Bruce", last_name<mark>:</mark> "Wayne" <mark>}</mark></pre>
+
+    <p>
+      We can directly modifies this object to add more values such as:
+    </p>
+
+    <p>
+      let name = { first_name: "Bruce", last_name: "Wayne", <mark>is_supernatural: false</mark> }
+    </p>
+
+    <p>
+      This looks little bit long. So, it is better to re-arrange the above statement to make it readable.
+    </p>
+
+    <pre>let name = {
+  first_name: "Bruce",
+  last_name: "Wayne",
+  is_supernatural: false<mark>,</mark>
+}</pre>
+
+    <p>
+      I haven't make the typo mistake, it is allowed now in JavaScript object to write comma at the end and it will not cause the error. This is also called <em>hanging comma</em>.
+    </p>
+
+    <p>
+      As method is first class citizen in JavaScript, you can even define an object that include function such as:
+    </p>
+
+    <pre>let name = {
+  first_name: "Bruce",
+  last_name: "Wayne",
+  is_supernatural: false,
+  <mark>greeting: function() {</mark>
+    <mark>console.log("Welcome to Gotham city!")</mark>
+  <mark>}</mark>
+}</pre>
+
+    <a href="36.html">Next &#8594;</a>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Suggestions - the JavaScript Bootcamp</title>
+
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <h1>Suggestions</h1>
+
+    <p>
+      Although, I've used nonsensical name of variables to define arrays but you must avoid it while writing in projects or in bigger program. The recommendation for naming array variable is -
+    </p>
+
+    <ol>
+      <li>Name the variable after what it contains. For example, in above case, if the array contains marks out of 50, then we should give the name of array after <code>mark</code> or <code>marks</code>.</li>
+      <li>Array name must be plural e.g. <code>marks</code> not </code>mark</code>. In this way, when you loop through it, you get a single element and can assign singular name of your array.</li>
+      <li>Also, while defining an array, put a space after comma in box brackets that make array more readable.</li>
+    </ol>
+
+    <p>
+      Putting above suggestion into action our above program becomes:
+    </p>
+
+    <pre><mark>marks</mark> = [34, 45, 47, 40, 33]
+
+<mark>marks</mark>.forEach(function(<mark>mark</mark>){
+  console.log(mark)
+})</pre>
+
+    <p>
+      While running a loop on <code>marks</code>, with each iteration, you'll get <code>mark</code>.
+
+    <a href="33.html">Next &#8594;</a>
+  </body>
+</html>

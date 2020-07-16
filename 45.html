@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Function with Default Parameters - the JavaScript Bootcamp</title>
+
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <h1>Function with Default Parameters</h1>
+
+    <p>
+      Copying the previous function:
+    </p>
+
+    <pre>let add = (a, b) => {
+  return a + b
+}</pre>
+
+    <p>
+      In order to call this function, we need to write something like:
+    </p>
+
+    <pre>add(23, 46)</pre>
+
+    <p>
+      But, with ES6, you can also define the default parameter values such as:
+    </p>
+
+    <pre>let add = (a=23, b=46) {
+  return a + b
+}</pre>
+
+    <p>
+      Now, we can call this function
+    </p>
+
+    <pre>add()
+add(34, 7)</pre>
+
+    <p>
+      The example is trivial and does not justify how useful this feature, but in future we'll use this feature for default behavior.
+    </p>
+
+    <a href="46.html">Next &#8594;</a>
+  </body>
+</html>

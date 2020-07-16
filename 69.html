@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>require() - the JavaScript Bootcamp</title>
+
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <h1>require()</h1>
+
+    <p>
+      Back to our <code>type.js</code> program, in order to resolve the <code>os</code>, we need to include it in our <code>type.js</code> program. The inclusion of <code>os</code> can be done using <code>require()</code> function. <a href="https://nodejs.org/dist/latest-v14.x/docs/api/globals.html#globals_require"><code>require()</code></a> function is part of globals and due to this, it is automatically available for you to use. As mentioned on <a href="https://nodejs.org/dist/latest-v14.x/docs/api/modules.html#modules_require_id">docs</a>, it take one argument called the <code>id</code> as string and return the content of that module. <code>id</code> is just a short string for each module written already in documentation such as <code>process</code>, <code>console</code>, <code>os</code>, and so on.
+    </p>
+
+    <p>
+      When we require <code>os</code> using <code>require()</code> function it return the content of <code>os</code> such as methods and objects. The recommendation from community is to save this content into a object variable and then use that object variable to call the needed methods or constants from <code>os</code> in following way.
+    </p>
+
+    <pre>const os = require('os')
+
+os.type()</pre>
+
+    <p>
+      First we <code>require()</code> this <code>os</code> module by passing the string id of it and then saved the return content into <code>os</code> constant. Now, I can access all the possible methods and constants available in <code>os</code> module. To try out this, I just call <code>os.type()</code>.
+    </p>
+
+    <p>
+      Due to this <code>require()</code> now <code>os</code> is defined within our program. So, let's add this line in our <code>type.js</code> program at the top of our file because always inclusion happen at the top of the file.
+    </p>
+
+    <pre>const os = require('os')
+
+os.type()</pre>
+
+    <p>
+      Now, running this program will print following output:
+    </p>
+
+    <pre>$ node type.js
+Linux</pre>
+
+    <p>
+      For me it returns <code>Linux</code> as I've GNU/Linux system.
+    </p>
+
+    <a href="70.html">Next &#8594;</a>
+  </body>
+</html>
