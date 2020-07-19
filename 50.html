@@ -18,21 +18,21 @@
     <pre>let marks = [34, 35, 37, 45, 40, 56]</pre>
 
     <p>
-      These are the marks of seven subject. I'm interested in first, second and then remaining. In other words, I want to store 34 in one variable, 35 in second variable and remaining element in third variable as array.
+      These are the marks of seven subjects. I'm interested in first, second and then remaining. In other words, I want to store <code>34</code> in one variable, <code>35</code> in second variable and remaining elements in third variable as array.
     </p>
 
     <p>
       With destructuring and spread operator, it is trivial:
     </p>
 
-    <pre>let [math, physics, ...other_marks] = marks</pre>
+    <pre>let [math, physics, <mark>...other_marks</mark>] = marks</pre>
 
     <p>
-      With this, math variable hold 34, physics variable hold 35, and other_marks - an array variable hold remaining marks - [37, 45, 40, 56]
+      With this, <code>math</code> variable hold <code>34</code>, <code>physics</code> variable hold <code>35</code>, and <code>other_marks</code> - an array variable hold remaining marks - <code>[37, 45, 40, 56]</code>.
     </p>
 
     <p>
-      Destructuring and spread operators used a lot in React.
+      Destructuring and spread operator used a lot in React.
     </p>
 
     <a href="51.html">Next &#8594;</a>

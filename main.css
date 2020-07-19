@@ -66,6 +66,9 @@ footer {
   color: #afafaf;
   font-size: 15px;
 }
+footer code {
+  font-size: 14px;
+}
 footer a {
   color: #afafaf !important;
   background-color: #efefef;
